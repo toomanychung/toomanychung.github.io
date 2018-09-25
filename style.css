@@ -1,0 +1,198 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: disc;
+    font-size: 1.25em;
+}
+
+ul:not(.pagination):not(.job) {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination {
+    list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+header {
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+div > h1 {
+  font-size: 1.8rem;
+}
+
+nav > p {
+  cursor: pointer;
+  margin: 25px 20px 15px;
+  padding: 5px 10px;
+}
+.pill-black, .pill-white {
+  border: 0.5px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.pill-black {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+footer {
+  margin-top: 5px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+/* Customizations of Bootstrap classes */
+
+header .row {
+  display: flex;
+  align-items: center;
+}
+
+.col-sm-4 p {
+  margin: 25px 20px 15px;
+  min-width: 60px;
+  padding: 1px;
+}
+
+section.container {
+  padding: 50px;
+}
+
+section.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron h2 {
+  background-color: #FFFFFF;
+  display: inline-block;
+  color: #F06529;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 5px;
+  
+}
+
+.jumbotron h3 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #2e6da4;
+  background-color: #FFFFFF;
+}
+
+.col-sm-1 img {
+  min-width: 32px;
+  min-height: 33px;
+}
+
+#album {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+#target {
+  background-image: url("./img/itdog.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+h4 {
+position: relative;
+font-size: 3em;
+line-height: 1.4;
+padding:0.25em 1em;
+top:0;
+display: inline-block;
+margin-bottom: 80px;
+font-family: 'Verdana';
+}
+
+h4:before,h4:after{ 
+  position: absolute;
+  top: 0;
+  content:'';
+width: 8px;
+height: 100%;
+display: inline-block;
+}
+h4:before{
+border-left: solid 1px black;
+border-top: solid 1px black;
+border-bottom: solid 1px black;
+  left: 0;
+}
+h4:after{
+  content: '';
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  right: 0;
+}
+
+.frame {
+  background-image: url("./img/f00099.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 120px;
+}
+
+h5 {
+  font-size: 1.75em;
+  font-weight:bold;
+  border-bottom: 2px dashed #000000;
+   margin-top: 0px;       /* 上線の外側の余白はナシ */
+   padding-top: 10px;      /* 上線の内側の余白はナシ */
+   margin-bottom: 0.3em;  /* 下線の外側の余白量 */
+   padding-bottom: 0.3em; /* 下線の内側の余白量 */
+   width:30%;
+}
+
+
+@media (max-width:767px) {
+  .frame {
+    background-image: none;
+  }
+}
