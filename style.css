@@ -70,6 +70,9 @@
         height: auto;
         padding-bottom: 10vh;
     }
+    .navbar-brand {
+        font-size: 15px;
+    }
 }
   
   .content p{
